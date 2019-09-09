@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="linkBlue">#0000EE</color>
+    <color name="darkChars">#323232</color>
+    <color name="appGreen">#D138761D</color>
+    <color name="adColor">#FFE599</color>
+    <color name="removeColor">#990000</color>
+    <color name="whiteBackgroundTransparent">#9CF1F5F8</color>
+    <color name="whiteBackgroundExtraTransparent">#51F1F5F8</color>
+    <color name="album_title">#4c4c4c</color>
+</resources>

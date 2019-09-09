@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.68"
+    android:background="@drawable/backgroundpic"
+    tools:context=".BrowseRecipesActivity">
+
+    <Button
+        android:id="@+id/btn_browse_all_recipes"
+        android:layout_width="370dp"
+        android:layout_height="136dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickViewAll"
+        android:text="@string/btn_browse_all_recipes"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <Button
+        android:id="@+id/btn_my_saved_recipes"
+        android:layout_width="372dp"
+        android:layout_height="135dp"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_my_saved_recipes"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whitesquare" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/whitesquare" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="85dp"
+        android:alpha="0.8"
+        app:layout_constraintEnd_toStartOf="@+id/imageView1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/imageView1"
+        app:srcCompat="@drawable/book" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_my_saved_recipes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_my_saved_recipes"
+        app:layout_constraintTop_toTopOf="@+id/btn_my_saved_recipes"
+        app:srcCompat="@drawable/heart" />
+
+</android.support.constraint.ConstraintLayout>

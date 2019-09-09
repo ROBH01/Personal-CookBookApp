@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    android:background="@drawable/backgroundrecover"
+    tools:context=".RecoverActivity">
+
+    <TextView
+        android:id="@+id/lbl_info_recovery"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_info_recover_pwd"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35000002" />
+
+    <TextView
+        android:id="@+id/recover_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_view_recover"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029999971" />
+
+    <EditText
+        android:id="@+id/email_recover"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackgroundTransparent"
+        android:ems="10"
+        android:hint="@string/hint_email_recover"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+    <Button
+        android:id="@+id/btn_recover_pwd"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="144dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/appGreen"
+        android:onClick="recoverPassword"
+        android:text="@string/btn_recover_pwd"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_recover" />
+
+</android.support.constraint.ConstraintLayout>
