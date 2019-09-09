@@ -1,6 +1,8 @@
 package com.example.cookbook;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -50,8 +52,32 @@ public class MyAccountActivity extends AppCompatActivity {
 
     //delete all info about THIS user from the database, also ask user to confirm and let user know if succeeded or not
     public void OnClickDelete(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle("Delete user?");
+        builder.setMessage("Are you sure you want to delete your account? This will be irreversible");
+        builder.setPositiveButton("Confirm",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                     deleteAccount();
+                    }
+                });
+        builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+
+    }
+
+    public void deleteAccount() {
         BackgroundWorker bgw = new BackgroundWorker(this);
-        bgw.execute("delete",usrName);
+        bgw.execute("delete", usrName);
     }
 
     public void logOutUser(View view) {
